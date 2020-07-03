@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Landingspagina Inzicht in het Achterland</title>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.jpg" type="image/x-icon"/>
+<link rel="shortcut icon" href="favicon.jpg" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<style>
+
+div {
+	box-sizing: border-box;
+}
+
+.text {
+	float: right
+}
+
+.item-a {
+	grid-area: header;
+	box-sizing: border-box;
+}
+
+.item-b1 {
+	grid-area: main1;
+}
+
+.item-b2 {
+	grid-area: main2;
+}
+
+.item-b3 {
+	grid-area: main3;
+}
+
+.item-b4 {
+	grid-area: main4;
+}
+
+.item-b5 {
+	grid-area: main5;
+}
+
+.item-c {
+	box-sizing: border-box;
+	grid-area: footer;
+	background-color: white;
+	text-align: center;
+}
+
+.whitebox1 {
+	background-color: white;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 10px;
+	outline: 1px solid #DDDDDD;
+}
+
+.whitebox {
+	background-color: white;
+	box-sizing: border-box;
+	height: 100%;
+	padding: 9px;
+	position: relative;
+	outline: 1px solid #DDDDDD;
+}
+
+.whitebox:hover {
+	background-color: rgb(244, 244, 244);
+	border: solid 1px;
+}
+
+.link-spanner{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.grid-container {
+	box-sizing: border-box;
+	height: 98vh;
+	display: grid;
+	grid-gap: 5px;
+	background-color: rgb(244, 244, 244);
+	grid-template-columns: 30% auto auto 30%;
+	grid-template-rows: auto auto auto auto auto 20px auto;
+	grid-template-areas:
+		". header header ."
+		". main1 main1 ."
+		". main2 main2 ."
+		". main3 main3 ."
+		". main4 main4 ."	
+		". main5 main5 ."	
+		"footer footer footer footer";
+}
+
+img.logo {
+	height: 80px;
+}
+
+
+td.logo {
+	box-sizing: border-box;
+	padding: 20px;
+	vertical-align: center;
+}
+
+td.mlv {
+	box-sizing: border-box;
+	padding: 10px;
+	vertical-align: center;
+}
+
+p1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: rgb(93, 93, 93);
+}
+
+p2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: rgb(93, 93, 93);
+}
+
+h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	font-weight: 400;
+	color: rgb(37, 108, 195);
+	padding-left: 5px;
+}
+
+h2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	color: rgb(37, 108, 195);
+	margin: 0px;
+}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+	<div class="item-a">
+	</div>
+	<div class="item-b1">
+	<h1>Inzicht in het Achterland</h1>
+	<div>
+	<div class="whitebox1">
+	<p2>Nelen & Schuurmans, Geon en het Informatiehuis Water hebben het initiatief genomen om samen met de spelers in de watersector inzichtelijk te maken wat de verbeterde beschikbaarheid van data kan opleveren voor het inzicht in onze waterveiligheid. Hiermee ontwikkelen we een showcase onder de noemer <strong>“Inzicht in het achterland”</strong> met mogelijkheden die open data en webservices kunnen bieden. Dit heeft een drietal dashboards / prototype dashboards opgeleverd:</p2>
+	</div>
+	</div>
+	</div>
+	<div class="item-b2">
+		<div>
+		<div class="whitebox">
+			<table style="width: 100%;">
+				<tbody>
+					<tr>
+						<td class="mlv"><img src="mlv\sterkewaterkeringen.png"</td>
+						<td><h2>Use case 1: Sterke waterkeringen</h2>
+						<p1><strong>Hoeveel inwoners wonen veiliger door het versterken van de dijk?</strong> Dat is de vraag die hier centraal staat. Deze use case is gebaseerd op de eerste laag van de meerlaagse waterveiligheid: preventie. Dit dashboard laat per versterkingsproject zien hoeveel mensen hierbij gebaat zijn. Op die manier wordt inzichtelijk wat een dijkversterking oplevert.  Dit dashboard is tot stand gekomen op basis van data van het Waterveiligheidsportaal, de Landelijke Databank Overstromingsrisico’s (LDO) en het CBS.</p1></td>
+					</tr>
+				</tbody>
+			</table>
+		<a href="https://inzichtinhetachterland.herokuapp.com"><span class="link-spanner"></span></a>
+		</div>
+		</div>
+	</div>
+	<div class="item-b3">
+		<div>
+		<div class="whitebox">
+			<table style="margin: 0px auto; width: 100%;">
+				<tbody>
+					<tr>
+						<td class="mlv"><img src="mlv\ruimtelijkeadaptatie.png"></td>
+						<td><h2>Use case 2: Ruimtelijke adaptatie</h2>
+						<p1>De vraag die hier wordt beantwoord is: <strong>Wat is het overstromingsrisico voor het te ontwikkelen plan?</strong> Dit dashboard laat relevante overstromingsinformatie zien voor de plancontouren van ruimtelijke ontwikkelingen. Op die manier wordt voor bijvoorbeeld bestemmingsplannen inzichtelijk wat de lokale maximale waterdiepte is bij een overstroming en wat de overstromingskans is, en kunnen in de planontwikkeling extra mitigerende maatregelen genomen worden. De databronnen die hiervoor gebruikt zijn, zijn de Ruimtelijkeplannen.nl API en de Landelijke Databank Overstromingsrisico’s (LDO).</p1></td>
+					</tr>
+				</tbody>
+			</table>
+		<a href="https://informatiehuis-water.github.io/iiha-use-case-2/"><span class="link-spanner"></span></a>			
+		</div>
+		</div>
+	</div>
+	<div class="item-b4">
+		<div class="whitebox">
+			<table style="margin: 0px auto; width: 100%;">
+				<tbody>
+					<tr>
+						<td class="mlv"><img src="mlv\rampenbeheersing.png"></td>
+						<td><h2>Use case 3: Rampenbeheersing</h2>
+						<p1><strong>Hoeveel (kwetsbare) inwoners worden geconfronteerd met de gevolgen van een overstroming?</strong> Dit prototype dashboard laat per overstromingsscenario zien hoe hoog het water komt te staan, verdeeld over waterdiepteklasses. Vervolgens wordt getoond hoeveel inwoners worden geconfrontreerd per waterdiepteklasse. Dit wordt ook uitgezet naar leeftijdsklasse. Op die manier krijgt men inzicht in de mate waarin kwetsbare leeftijdsgroepen worden getroffen en kan men voorbereidingen treffen. De gebruikte data zijn afkomstig van het Waterveiligheidsportaal, de Landelijke Databank Overstromingsrisico’s (LDO) en het CBS.</p1></td>
+					</tr>
+				</tbody>
+			</table>
+		<a href="https://www.figma.com/proto/ohDhVSV3Wkq5Ag063emYDd/user-case-3?node-id=19%3A301&scaling=scale-down"><span class="link-spanner"></span></a>
+		</div>
+	</div>
+	<div class="item-b5">
+	</div>
+	
+	
+	
+	<div class="item-c">
+
+		<table style="margin: 0px auto;">
+			<tbody>
+				<tr>
+					<td class="logo"><a href="https://geon.nl"><img style="height:50px;" src="logos\geon.png"></a></td>
+					<td class="logo"><a href="https://ihw.nl"><img class="logo" src="logos\ihw.png"></a></td>
+					<td class="logo"><a href="https://nelen-schuurmans.nl"><img class="logo" src="logos\nelen.png"></a></td>
+				</tr>
+			</tbody>
+		</table>	
+	</div>
+</div>
+</body>
+</html>
+
